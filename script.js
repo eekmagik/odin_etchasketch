@@ -1,4 +1,7 @@
 const grid = document.getElementById('container');
-const cell = document.createElement("div");
 
-grid.appendChild(cell);
+
+for (let i=0; i<16; i++) {
+  const cell = document.createElement("div");
+  grid.appendChild(cell);
+}
