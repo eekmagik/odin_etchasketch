@@ -1,6 +1,8 @@
 #container { 
   display: grid;
-  background: #000;
+  grid-template-columns: auto auto auto auto;
+  
   width: 40vw;
   height: 40vw;
+  
 }
