@@ -24,10 +24,23 @@
   background-color: black;
   margin-bottom: 2em;
   font-size: 18px;
-  margin: 0 35% 2em 35%;
+  margin: 0 35% 6px 35%;
 }
 
 .content {
   display: flex;
   justify-content: center;
+}
+
+.rainbowbutton {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+  
+}
+
+.rainbowbutton > label {
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+  -webkit-background-clip: text;
+  color: transparent;
 }
