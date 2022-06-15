@@ -2,5 +2,5 @@
   display: grid;
   width: 40vw;
   height: 40vw;
-  
+  border: 4px solid black;
 }
