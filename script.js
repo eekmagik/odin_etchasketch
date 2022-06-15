@@ -1,7 +1,13 @@
 const grid = document.getElementById('container');
+const checkbox = document.getElementById('rainbow');
 
 function mouseOver(cell) {
-  cell.style.backgroundColor = "black";
+
+  if (checkbox.checked === true) {
+    cell.style.backgroundColor = '#'+Math.floor(Math.random()*16777215).toString(16);
+  }else {
+    cell.style.backgroundColor = "black";
+  }
 }
 
 function mouseOut(cell) {
@@ -20,7 +26,7 @@ function gridSize() {
     for (let i=0; i<size**2; i++) {
       const cell = document.createElement("div");
       cell.style.aspectRatio = "1 / 1";
-      cell.style.border = "solid black 1px";
+      //cell.style.border = "solid black 1px";
       cell.onmouseover = function() {mouseOver(cell)};
       //cell.onmouseout = function() {mouseOut(cell)};
       grid.appendChild(cell);
